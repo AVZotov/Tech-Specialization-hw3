@@ -18,4 +18,9 @@ public class Freelancer extends Worker{
     public void getMonthlySalary() {
         System.out.println(salary * averageDays * workingHours);
     }
+
+    @Override
+    public int compareTo(Worker o) {
+        return this.id.compareTo(o.id);
+    }
 }

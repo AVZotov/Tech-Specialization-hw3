@@ -1,5 +1,6 @@
 package ru.geekbrains;
 
+
 public class Program {
     public static void main(String[] args) {
         Worker[] workers = new Worker[] {
@@ -9,8 +10,6 @@ public class Program {
                 new Freelancer(80)
         };
 
-        for (Worker worker : workers){
-            worker.getMonthlySalary();
-        }
+
     }
 }
