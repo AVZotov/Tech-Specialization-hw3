@@ -1,6 +1,8 @@
 package ru.geekbrains;
 
 
+import java.util.Arrays;
+
 public class Program {
     public static void main(String[] args) {
         Worker[] workers = new Worker[] {
@@ -10,6 +12,9 @@ public class Program {
                 new Freelancer(80)
         };
 
+        Arrays.sort(workers);
+
+        System.out.println(Arrays.toString(workers));
 
     }
 }

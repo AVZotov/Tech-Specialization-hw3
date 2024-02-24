@@ -1,6 +1,6 @@
 package ru.geekbrains;
 
-public class Freelancer extends Worker{
+public class Freelancer extends Worker implements Comparable<Worker>{
     private double averageDays = 20.8;
     private double workingHours = 8;
 
@@ -15,8 +15,8 @@ public class Freelancer extends Worker{
     }
 
     @Override
-    public void getMonthlySalary() {
-        System.out.println(salary * averageDays * workingHours);
+    public Double getMonthlySalary() {
+        return salary * averageDays * workingHours;
     }
 
     @Override

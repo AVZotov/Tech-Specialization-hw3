@@ -10,5 +10,10 @@ public abstract class Worker implements Comparable<Worker>{
         this.salary = salary;
         id = UUID.randomUUID().toString().substring(0, 6);
     }
-    public abstract void getMonthlySalary();
+    public abstract Double getMonthlySalary();
+
+    @Override
+    public String toString() {
+        return this.getClass().getSimpleName() + " with ID: " + id + " salary: " + this.getMonthlySalary();
+    }
 }

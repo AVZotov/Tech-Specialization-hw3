@@ -6,8 +6,8 @@ public class Staff extends Worker implements Comparable<Worker>{
     }
 
     @Override
-    public void getMonthlySalary() {
-        System.out.println(salary);
+    public Double getMonthlySalary() {
+        return salary;
     }
 
     @Override
